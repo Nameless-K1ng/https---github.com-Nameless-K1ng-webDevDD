@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+
+.container {
+  height: 100vh;
+  font-family: "Caprasimo", serif;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navAndProdContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.prodContainer {
+  height: 100%;
+  width: 100%;
+  min-width: 800px;
+  background-color: azure;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prodTypeName {
+  padding-left: 25px;
+  font-size: 24px;
+  color: rgb(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.gap {
+  height: 50px;
+  background-color: aqua;
+}

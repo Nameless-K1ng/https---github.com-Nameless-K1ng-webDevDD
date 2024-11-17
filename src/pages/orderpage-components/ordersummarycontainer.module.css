@@ -1,0 +1,9 @@
+.orderContainer {
+  height: 100%;
+  width: calc(100vw - 1150px);
+  min-width: 300px;
+  padding: 10px;
+
+  background-color: aliceblue;
+  /* border: 2px dashed blue; */
+}

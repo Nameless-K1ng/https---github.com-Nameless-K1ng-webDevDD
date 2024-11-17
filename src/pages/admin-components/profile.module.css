@@ -1,0 +1,15 @@
+.container {
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileBtn {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+}

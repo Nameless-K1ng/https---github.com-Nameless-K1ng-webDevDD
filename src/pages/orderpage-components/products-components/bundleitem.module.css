@@ -1,0 +1,39 @@
+.bundleBtn {
+  width: 200px;
+  height: 220px;
+  background-color: #fe6d01;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.bundleBtn:hover {
+  border-width: 5px;
+  border-color: aquamarine;
+}
+
+.bundleLabel {
+  width: 100%;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.bundleItemImg {
+  height: 125px;
+  width: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.numOfItemDiv {
+  width: 100%;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}

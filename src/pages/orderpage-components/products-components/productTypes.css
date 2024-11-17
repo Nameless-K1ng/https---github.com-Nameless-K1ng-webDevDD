@@ -1,0 +1,14 @@
+.prodContainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 190px 190px 190px 190px 190px 190px;
+  grid-template-rows: 190px;
+  grid-row-gap: 10px;
+  margin: 20px auto;
+  margin-bottom: 20px;
+}
+
+.prodContainer div {
+  margin: 0 auto;
+}

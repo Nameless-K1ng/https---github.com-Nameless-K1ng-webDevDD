@@ -1,0 +1,72 @@
+.unaContainer {
+  height: 100%;
+  display: flex;
+
+  border: 3px solid orange;
+}
+
+.profileContainer {
+  height: 100%;
+  width: 25%;
+  min-width: 350px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoContainer {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: chocolate;
+}
+
+.profileLogo {
+  height: 100px;
+  background-color: white;
+}
+
+.profiles {
+  height: 500px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.profileContainer > div {
+  flex: 1 1 auto;
+}
+
+.spaceDiv {
+  height: 200px;
+}
+
+.infoDiv {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: beige;
+}
+
+.btnDiv {
+  margin-top: 10px;
+  height: 50px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.createBtn {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}

@@ -1,0 +1,35 @@
+.infoboxContainer {
+  height: 40px;
+  width: 400px;
+  color: rgb(0, 0, 0, 0.5);
+  border-radius: 3px;
+  border: 2px solid rgb(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.typeDiv {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.infoDiv {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.textBox {
+  height: 100%;
+  width: 100%;
+  background: none;
+  padding-left: 10px;
+}

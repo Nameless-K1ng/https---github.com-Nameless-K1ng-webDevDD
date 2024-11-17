@@ -1,0 +1,37 @@
+.adminContainer {
+  height: 100vh;
+  font-family: "Caprasimo", serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  border: 2px dashed cyan;
+}
+
+.navBar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  border: 2px dashed blue;
+}
+
+.sectionBtn {
+  height: 100%;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+}
+
+.sectionBtn:hover {
+  border: 3px solid rgb(0, 0, 0, 0.5);
+}
+
+.sectionContainer {
+  height: calc(100vh - 100px);
+  width: 100%;
+  min-width: 900px;
+
+  border: 2px dashed aqua;
+}

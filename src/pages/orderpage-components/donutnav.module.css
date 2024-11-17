@@ -1,0 +1,50 @@
+.navDiv {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f40290;
+  position: relative;
+  display: flex;
+}
+
+.navDiv > div {
+  flex: 1 1 auto;
+}
+
+.ddLogo {
+  height: 100%;
+  line-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ddLogo img {
+  height: 40px;
+  width: auto;
+}
+
+.productsDiv {
+  height: 100%;
+}
+
+.botImagesDiv {
+  height: 100%;
+  position: relative;
+}
+
+.pinkDonut {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+}
+
+.whiteCup {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+}
