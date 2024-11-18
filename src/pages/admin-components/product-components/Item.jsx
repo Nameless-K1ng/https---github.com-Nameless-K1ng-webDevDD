@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./item.module.css";
-export default function Item({ name, img, price, type, handleItemClick }) {
+export default function Item({ id, name, img, price, type, handleItemClick }) {
   //currently not in used from here . . .
   const [quantity, setQty] = useState(0);
   function increment() {
@@ -21,6 +21,7 @@ export default function Item({ name, img, price, type, handleItemClick }) {
         className={styles.itemBtn}
         onClick={() =>
           handleItemClick({
+            id: id,
             name: name,
             img: img,
             price: price,

@@ -77,6 +77,7 @@ export default function OrderPage() {
     }
   }, [isBundle]);
 
+  //used for navigation/scrolling to the types of products
   const sandwiches = useRef(null);
   const drinks = useRef(null);
   const premium = useRef(null);
@@ -108,6 +109,7 @@ export default function OrderPage() {
   }
 
   function handleItemClick({
+    id: id,
     name: name,
     img: img,
     price: price,
@@ -118,7 +120,10 @@ export default function OrderPage() {
     if (isBundle) {
       console.log("Current Bundle: " + currentBundle);
       if (type === "Premium" && !summaryBundles[currentBundle]?.premiumFull) {
-        setBundlePremium((bP) => [...bP, { name: name, img: img }]);
+        setBundlePremium((bP) => [
+          ...bP,
+          { id: id, name: name, price: price, qty: qty, type: type, img: img },
+        ]);
         setNumOfPremium((numOfPremium) => numOfPremium + 1);
         if (numOfPremium == summaryBundles[currentBundle].numPremium - 1) {
           summaryBundles[currentBundle].premiumFull = true;
@@ -135,7 +140,10 @@ export default function OrderPage() {
         type === "Classic" &&
         !summaryBundles[currentBundle].classicFull
       ) {
-        setBundleClassic([...bundleClassic, { name: name, img: img }]);
+        setBundleClassic([
+          ...bundleClassic,
+          { id: id, name: name, price: price, qty: qty, type: type, img: img },
+        ]);
         setNumOfClassic(numOfClassic + 1);
         if (numOfClassic == summaryBundles[currentBundle].numClassic - 1) {
           summaryBundles[currentBundle].classicFull = true;
@@ -153,7 +161,7 @@ export default function OrderPage() {
         summaryBundles[currentBundle].classicFull
       ) {
         setIsBundle(false);
-        console.log("Full Charjj");
+        console.log("Full Bundle!");
       }
     } else {
       const existingDonut = summaryItems.find((donut) => donut.name === name);
@@ -164,21 +172,10 @@ export default function OrderPage() {
       } else {
         addItem([
           ...summaryItems,
-          { name: name, img: img, price: price, qty: qty },
+          { id: id, name: name, price: price, qty: qty, type: type, img: img },
         ]);
       }
     }
-    //for debugging
-    // summaryBundles[currentBundle].bundlePremium.map((item) =>
-    //   console.log(item.name)
-    // );
-    // summaryBundles[currentBundle].bundleClassic.map((item) =>
-    //   console.log(item.name)
-    // );
-    // console.log("LENGTH");
-    // console.log("Premium" + summaryBundles[currentBundle].bundlePremium.length);
-    // console.log("Classic" + summaryBundles[currentBundle].bundleClassic.length);
-    //until here
   }
 
   function handleBundleClick({ name: name, img: img, price: price }) {

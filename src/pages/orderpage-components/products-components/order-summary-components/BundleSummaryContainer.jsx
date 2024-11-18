@@ -24,7 +24,7 @@ export default function BundleSummaryContainer({
   }
 
   if (bundle.premiumFull && bundle.classicFull) {
-    console.log("Rendering the bundle object");
+    // console.log("Rendering the bundle object");
     return (
       <div className={styles.bundleSummaryItemContainer}>
         <div className={styles.bundleDiv}>
@@ -60,7 +60,7 @@ export default function BundleSummaryContainer({
       </div>
     );
   } else {
-    console.log("Rendering the bundle Arrays");
+    // console.log("Rendering the bundle Arrays");
     return (
       <div className={styles.bundleSummaryItemContainer}>
         <div className={styles.bundleDiv}>

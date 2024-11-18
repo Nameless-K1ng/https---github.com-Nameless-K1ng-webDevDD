@@ -47,7 +47,6 @@ export default function OrderSummary({
             qty={items.qty}
           />
         ))}
-        {summaryItems?.map((items) => console.log(items.name, items.price))}
       </div>
     </div>
   );

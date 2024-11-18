@@ -16,64 +16,84 @@ export default function Drinks({ handleItemClick }) {
   return (
     <div className="prodContainer">
       <Item
+        id={24}
         name={"Brewed Coffee"}
         img={brewedCoffee}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={25}
         name={"Hot Choco"}
         img={hotChoco}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={26}
         name={"Hot Latte"}
         img={hotLatte}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={27}
         name={"Iced Coffee"}
         img={icedCoffee}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={28}
         name={"Iced Coffee Hazelnut"}
         img={icedCoffeeHazelnut}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={29}
         name={"Iced Spanish Latte"}
         img={icedSpanishLatte}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={30}
         name={"Iced Macchiato"}
         img={icedMacchiato}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={31}
         name={"Iced Strawberry Cheesecake Latte"}
         img={icedStrawberryCheesecakeLatte}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={32}
         name={"Icy Choco Java"}
         img={icyChocojava}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
       <Item
+        id={33}
         name={"Iced Coffee Almond"}
         img={icedCoffeeAlmond}
         price={price}
         handleItemClick={handleItemClick}
+        type={"drink"}
       />
     </div>
   );

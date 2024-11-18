@@ -17,6 +17,7 @@ export default function PremiumDonuts({ handleItemClick }) {
   return (
     <div className="prodContainer">
       <Item
+        id={14}
         name={"Blueberry Cheese"}
         img={blueberryCheese}
         price={price}
@@ -24,6 +25,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={15}
         name={"Boston Coffee Kreme"}
         img={bostonCoffeeKreme}
         price={price}
@@ -31,6 +33,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={16}
         name={"Choco Butternut"}
         img={chocoButternut}
         price={price}
@@ -38,6 +41,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={17}
         name={"Choco Trickles"}
         img={chocoTrickles}
         price={price}
@@ -45,6 +49,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={18}
         name={"Choconut Sundae"}
         img={choconutSundae}
         price={price}
@@ -52,6 +57,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={19}
         name={"Cinnamon Sugar Dusted"}
         img={cinnamonSugarDusted}
         price={price}
@@ -59,6 +65,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={20}
         name={"Cookies and Cream"}
         img={cookiesNCream}
         price={price}
@@ -66,6 +73,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={21}
         name={"Dark Choco"}
         img={darkChoco}
         price={price}
@@ -73,6 +81,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={22}
         name={"Rocky Road"}
         img={rockyRoad}
         price={price}
@@ -80,6 +89,7 @@ export default function PremiumDonuts({ handleItemClick }) {
         type={"Premium"}
       />
       <Item
+        id={23}
         name={"Strawberry Kreme Filled"}
         img={strawberryKremeFilled}
         price={price}

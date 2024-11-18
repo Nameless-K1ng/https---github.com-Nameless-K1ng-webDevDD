@@ -20,6 +20,7 @@ export default function ClassicDonuts({ handleItemClick }) {
   return (
     <div className="prodContainer">
       <Item
+        id={1}
         name={"Bavarian"}
         img={bavarianFilled}
         price={price}
@@ -27,6 +28,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={2}
         name={"Choco Sprinkle"}
         img={chocosprinkle}
         price={price}
@@ -34,6 +36,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={3}
         name={"Strawberry Sprinkle"}
         img={strawberrysprinkle}
         price={price}
@@ -41,6 +44,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={4}
         name={"Nutty Choco"}
         img={nuttyChoco}
         price={price}
@@ -48,6 +52,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={5}
         name={"Sugar Raised"}
         img={sugarRaised}
         price={price}
@@ -55,6 +60,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={6}
         name={"Vanilla Sprinkle"}
         img={vanillaSprinkle}
         price={price}
@@ -62,6 +68,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={7}
         name={"Choco Marble"}
         img={chocoMarble}
         price={price}
@@ -69,6 +76,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={8}
         name={"Coffee Crunch"}
         img={coffeeCrunch}
         price={price}
@@ -76,6 +84,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={9}
         name={"Coffee Nut"}
         img={coffeeNut}
         price={price}
@@ -83,6 +92,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={10}
         name={"Mellon Frosted"}
         img={mellonFrosted}
         price={price}
@@ -90,6 +100,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={11}
         name={"Nutty Strawberry"}
         img={nuttyStrawberry}
         price={price}
@@ -97,6 +108,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={12}
         name={"Nutty Ube"}
         img={nuttyUbe}
         price={price}
@@ -104,6 +116,7 @@ export default function ClassicDonuts({ handleItemClick }) {
         type={"Classic"}
       />
       <Item
+        id={13}
         name={"Boston Kreme"}
         img={bostonKreme}
         price={price}

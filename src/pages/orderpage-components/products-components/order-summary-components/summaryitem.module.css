@@ -38,6 +38,8 @@
 
 .summaryItemQty {
   font-size: 24px;
+  margin-right: 15px;
+  margin-left: 5px;
 }
 
 .deleteBtnDiv {
@@ -70,4 +72,5 @@
   color: rgb(0, 0, 0, 0.5);
   border-radius: 3px;
   border: none;
+  background: none;
 }

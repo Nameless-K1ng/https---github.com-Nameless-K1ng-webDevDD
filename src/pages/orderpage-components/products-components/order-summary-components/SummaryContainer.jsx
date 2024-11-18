@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BillsPayment from "./BillsPayment";
 import OrderSummary from "./OrderSummary";
 import styles from "./summarycontainer.module.css";
+import BundleItem from "../BundleItem";
 export default function SummaryComponent({
   summaryItems,
   addItem,
@@ -20,19 +21,43 @@ export default function SummaryComponent({
   let total = 0;
   const [payment, setPayment] = useState(0);
   const [change, setChange] = useState(0);
+  const [recorded, setRecorded] = useState(false);
+  //test 1
+  let sold = [];
+  let transactionSummary;
+  //end test
+
+  useEffect(() => {
+    if (recorded) {
+      setRecorded(false);
+      setPayment(0);
+    }
+  }, [recorded]);
 
   summaryItems.map((items) => (total += items.price * items.qty));
   summaryBundles.map((items) => (total += items.price));
 
+  //PROCESS PAYMENT
   function processPayment() {
     if (payment > total && total != 0) {
+      //create the transaction summary object
+      summaryItems.map((item) => (sold = [...sold, item]));
+      summaryBundles.map((bundle) =>
+        bundle.bundleClassic.map((item) => (sold = [...sold, item]))
+      );
+      summaryBundles.map((bundle) =>
+        bundle.bundlePremium.map((item) => (sold = [...sold, item]))
+      );
+      transactionSummary = { total: total, payment: payment, sales: sold };
+      //transaction summary ends here
+
       console.log("Payment processed");
+      console.log(transactionSummary);
+
+      setRecorded(() => true);
       setChange(payment - total);
-      summaryBundles.map((item) => console.log(item.bundlePremium));
-      summaryBundles.map((item) => console.log(item.bundleClassic));
-      summaryItems.map((item) => console.log("summaryItem: " + item.name));
     }
-  }
+  } //end of processPayment()
 
   function cancel() {
     reset();
@@ -68,7 +93,10 @@ export default function SummaryComponent({
           <button className={styles.cancelBtn} onClick={() => cancel()}>
             X
           </button>
-          <button className={styles.processBtn} onClick={processPayment}>
+          <button
+            className={styles.processBtn}
+            onClick={() => processPayment()}
+          >
             PROCESS
           </button>
         </div>

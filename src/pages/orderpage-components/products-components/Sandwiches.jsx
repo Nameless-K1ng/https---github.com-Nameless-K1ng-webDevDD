@@ -12,40 +12,52 @@ export default function Sandwiches({ handleItemClick }) {
   return (
     <div className="prodContainer">
       <Item
+        id={34}
         name={"Cheese"}
         img={cheese}
         price={price}
         handleItemClick={handleItemClick}
+        type={"sandwich"}
       />
       <Item
+        id={35}
         name={"Ham and Cheese"}
         img={hamNCheese}
         price={price}
         handleItemClick={handleItemClick}
+        type={"sandwich"}
       />
       <Item
+        id={36}
         name={"Bacon Cheesy Mushroom"}
         img={baconCheesyMushroom}
         price={price}
         handleItemClick={handleItemClick}
+        type={"sandwich"}
       />
       <Item
+        id={37}
         name={"K-Bun"}
         img={kBun}
         price={price}
         handleItemClick={handleItemClick}
+        type={"sandwich"}
       />
       <Item
+        id={38}
         name={"Spanish Sausage"}
         img={spanishSausage}
         price={price}
         handleItemClick={handleItemClick}
+        type={"sandwich"}
       />
       <Item
+        id={39}
         name={"Tuna"}
         img={tuna}
         price={price}
         handleItemClick={handleItemClick}
+        type={"sandwich"}
       />
     </div>
   );
